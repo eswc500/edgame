@@ -245,8 +245,9 @@ MonoBehaviour:
   DialogText: "En mi clase de matem\xE1ticas, un compa\xF1ero me para un papel doblado. 
     Mientras extiende la mano logro ver que tiene un dibujo con algunas inscripciones"
   Images:
-  - {fileID: 2800000, guid: 9c0a88d4187408140897b45b4e7e0c99, type: 3}
-  - {fileID: 2800000, guid: a336b6d8bcab6e940a218eaee48868e9, type: 3}
+  - {fileID: 21300000, guid: 9c0a88d4187408140897b45b4e7e0c99, type: 3}
+  - {fileID: 21300000, guid: ad1a201aa20c0ac4a9e7cf75ef7fb8e5, type: 3}
+  - {fileID: 21300000, guid: 9c0d6ec706e01ce448aea81584af092b, type: 3}
   Answers:
   - answerText: asdasasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
     activateFeedback: 1

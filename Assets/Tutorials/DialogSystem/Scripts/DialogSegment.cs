@@ -27,7 +27,10 @@ namespace Tutorials.DialogSystem.Scripts
         public string DialogText;
 
         // New list to store the images for each answer
-        public List<Texture2D> Images = new List<Texture2D>();
+        public List<Sprite> Images = new List<Sprite>();
+
+        public float timebetw;
+
 
         [Output(dynamicPortList = true)]
         public List<DialogAnswer> Answers = new List<DialogAnswer>();

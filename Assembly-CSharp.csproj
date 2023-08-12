@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{98007A1E-93B7-EF30-B7CF-D1CE98AF8DD8}</ProjectGuid>
+    <ProjectGuid>{EDBE991F-77F5-10FD-F4EB-9F27C1F6B7E1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -53,9 +53,13 @@
     <UnityVersion>2020.3.25f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets\DialogNodeBasedSystem\Scripts\TestDialogStarter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\DialogNodeBasedSystem\Scripts\NodeEditor\NodeEditor.cs" />
+    <Compile Include="Assets\xNode\Examples\LogicToy\Nodes\LogicNode.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
@@ -64,38 +68,60 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\Scripts\BounceButton.cs" />
     <Compile Include="Assets\DialogNodeBasedSystem\Scripts\Others\EditorIcons.cs" />
+    <Compile Include="Assets\xNode\Examples\RuntimeMathGraph\Scripts\UGUIContextMenu.cs" />
+    <Compile Include="Assets\xNode\Examples\LogicToy\Nodes\AndNode.cs" />
+    <Compile Include="Assets\xNode\Examples\RuntimeMathGraph\Scripts\UGUIPort.cs" />
     <Compile Include="Assets\Scripts\WordByWordText.cs" />
+    <Compile Include="Assets\xNode\Examples\RuntimeMathGraph\Scripts\RuntimeNodes\UGUIVector.cs" />
+    <Compile Include="Assets\xNode\Examples\RuntimeMathGraph\Scripts\RuntimeNodes\UGUIMathNode.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\Tutorials\DialogSystem\Scripts\DialogNodeEditor.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
     <Compile Include="Assets\Scripts\NodeEditorWindow.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
+    <Compile Include="Assets\xNode\Examples\MathGraph\Nodes\Vector.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\Tutorials\DialogSystem\Scripts\Dialog.cs" />
+    <Compile Include="Assets\xNode\Examples\RuntimeMathGraph\Scripts\RuntimeNodes\UGUIMathBaseNode.cs" />
     <Compile Include="Assets\Tutorials\DialogSystem\Scripts\DialogSegment.cs" />
     <Compile Include="Assets\DialogNodeBasedSystem\Scripts\NodeEditor\SentenceNode.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+    <Compile Include="Assets\xNode\Examples\StateMachine\StateGraph.cs" />
+    <Compile Include="Assets\xNode\Examples\RuntimeMathGraph\Scripts\NodeDrag.cs" />
     <Compile Include="Assets\Scripts\opcion_but.cs" />
     <Compile Include="Assets\DialogNodeBasedSystem\Scripts\NodeEditor\AnswerNode.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
+    <Compile Include="Assets\xNode\Examples\LogicToy\Nodes\ToggleNode.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
+    <Compile Include="Assets\xNode\Examples\RuntimeMathGraph\Scripts\RuntimeNodes\UGUIDisplayValue.cs" />
+    <Compile Include="Assets\xNode\Examples\LogicToy\Nodes\NotNode.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
+    <Compile Include="Assets\xNode\Examples\LogicToy\ITimerTick.cs" />
     <Compile Include="Assets\DialogNodeBasedSystem\Scripts\Dialog\SentencePanel.cs" />
     <Compile Include="Assets\DialogNodeBasedSystem\Scripts\Dialog\AnswerPanel.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
+    <Compile Include="Assets\xNode\Examples\RuntimeMathGraph\Scripts\Connection.cs" />
     <Compile Include="Assets\DialogNodeBasedSystem\Scripts\Others\Sentence.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
+    <Compile Include="Assets\xNode\Examples\StateMachine\Nodes\StateNode.cs" />
+    <Compile Include="Assets\xNode\Examples\MathGraph\Nodes\MathNode.cs" />
+    <Compile Include="Assets\xNode\Examples\MathGraph\Nodes\DisplayValue.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\DialogNodeBasedSystem\Scripts\Dialog\DialogDisplayer.cs" />
+    <Compile Include="Assets\xNode\Examples\LogicToy\LogicGraph.cs" />
     <Compile Include="Assets\Tutorials\DialogSystem\Scripts\DialogWindow.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
+    <Compile Include="Assets\xNode\Examples\RuntimeMathGraph\Scripts\UGUITooltip.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
+    <Compile Include="Assets\xNode\Examples\LogicToy\Nodes\PulseNode.cs" />
     <Compile Include="Assets\Scripts\FloatMovement.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\DialogNodeBasedSystem\Scripts\NodeEditor\DialogNodeGraph.cs" />
+    <Compile Include="Assets\xNode\Examples\MathGraph\MathGraph.cs" />
+    <Compile Include="Assets\xNode\Examples\RuntimeMathGraph\Scripts\RuntimeMathGraph.cs" />
     <Compile Include="Assets\DialogNodeBasedSystem\Scripts\NodeEditor\Node.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
@@ -114,29 +140,6 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
     <Compile Include="Assets\Scripts\but_eve.cs" />
-    <Compile Include="Assets\xNode\Examples\RuntimeMathGraph\Scripts\RuntimeNodes\UGUIDisplayValue.cs" />
-    <Compile Include="Assets\xNode\Examples\LogicToy\Nodes\AndNode.cs" />
-    <Compile Include="Assets\xNode\Examples\MathGraph\Nodes\DisplayValue.cs" />
-    <Compile Include="Assets\xNode\Examples\StateMachine\Nodes\StateNode.cs" />
-    <Compile Include="Assets\xNode\Examples\RuntimeMathGraph\Scripts\RuntimeNodes\UGUIVector.cs" />
-    <Compile Include="Assets\xNode\Examples\RuntimeMathGraph\Scripts\UGUIPort.cs" />
-    <Compile Include="Assets\xNode\Examples\LogicToy\LogicGraph.cs" />
-    <Compile Include="Assets\xNode\Examples\MathGraph\Nodes\Vector.cs" />
-    <Compile Include="Assets\xNode\Examples\RuntimeMathGraph\Scripts\UGUITooltip.cs" />
-    <Compile Include="Assets\xNode\Examples\LogicToy\Nodes\NotNode.cs" />
-    <Compile Include="Assets\xNode\Examples\RuntimeMathGraph\Scripts\Connection.cs" />
-    <Compile Include="Assets\xNode\Examples\RuntimeMathGraph\Scripts\RuntimeMathGraph.cs" />
-    <Compile Include="Assets\xNode\Examples\RuntimeMathGraph\Scripts\RuntimeNodes\UGUIMathNode.cs" />
-    <Compile Include="Assets\xNode\Examples\LogicToy\ITimerTick.cs" />
-    <Compile Include="Assets\xNode\Examples\LogicToy\Nodes\ToggleNode.cs" />
-    <Compile Include="Assets\xNode\Examples\LogicToy\Nodes\LogicNode.cs" />
-    <Compile Include="Assets\xNode\Examples\StateMachine\StateGraph.cs" />
-    <Compile Include="Assets\xNode\Examples\MathGraph\MathGraph.cs" />
-    <Compile Include="Assets\xNode\Examples\MathGraph\Nodes\MathNode.cs" />
-    <Compile Include="Assets\xNode\Examples\RuntimeMathGraph\Scripts\RuntimeNodes\UGUIMathBaseNode.cs" />
-    <Compile Include="Assets\xNode\Examples\RuntimeMathGraph\Scripts\UGUIContextMenu.cs" />
-    <Compile Include="Assets\xNode\Examples\RuntimeMathGraph\Scripts\NodeDrag.cs" />
-    <Compile Include="Assets\xNode\Examples\LogicToy\Nodes\PulseNode.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -833,16 +836,16 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{CBDC9498-1D52-14DF-4784-C860F654CF1E}</Project>
+      <Project>{E6E150D2-25F6-3A61-F97B-A43A70BA07BD}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
-    <ProjectReference Include="XNodeEditor.csproj">
-      <Project>{9A098760-30E5-FC6C-F3B2-447403B6A6B8}</Project>
-      <Name>XNodeEditor</Name>
-    </ProjectReference>
     <ProjectReference Include="XNode.csproj">
-      <Project>{DCBD5E14-BD05-C3E4-6452-2C1D68DEED87}</Project>
+      <Project>{DCAE5145-0AA5-E07D-4CC7-9A2486C1D107}</Project>
       <Name>XNode</Name>
+    </ProjectReference>
+    <ProjectReference Include="XNodeEditor.csproj">
+      <Project>{0726F8C4-7986-7C26-D6CE-1FE2F0601905}</Project>
+      <Name>XNodeEditor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

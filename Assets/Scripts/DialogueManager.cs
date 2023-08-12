@@ -17,7 +17,7 @@ namespace Tutorials.DialogSystem.Scripts
 
         private int segmentIndex = 0;
 
-        private DialogSegment activeSegment;
+        public DialogSegment activeSegment;
 
         //variables 
         public RectTransformAnimation rect;

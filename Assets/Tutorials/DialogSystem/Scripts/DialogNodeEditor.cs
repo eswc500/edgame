@@ -77,10 +77,10 @@ namespace Tutorials.DialogSystem.Scripts
             for (int i = 0; i < segment.Images.Count; i++)
             {
                 EditorGUILayout.BeginHorizontal();
-                Texture2D image = segment.Images[i];
+                Sprite image = segment.Images[i];
                 if (image != null)
                 {
-                    GUILayout.Box(image, GUILayout.Width(64), GUILayout.Height(64));
+                    GUILayout.Box(image.texture, GUILayout.Width(64), GUILayout.Height(64));
                 }
                 else
                 {
@@ -89,7 +89,7 @@ namespace Tutorials.DialogSystem.Scripts
 
                 EditorGUILayout.BeginVertical();
                 EditorGUI.BeginChangeCheck();
-                Texture2D newImage = EditorGUILayout.ObjectField(segment.Images[i], typeof(Texture2D), false) as Texture2D;
+                Sprite newImage = EditorGUILayout.ObjectField(segment.Images[i], typeof(Sprite), false) as Sprite;
                 if (EditorGUI.EndChangeCheck())
                 {
                     segment.Images[i] = newImage;

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{0AAECF91-B0A0-72B7-66B6-952FDBBEC0AA}</ProjectGuid>
+    <ProjectGuid>{F7150E11-8AD0-CBA6-9626-BAF25AD154C7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -53,12 +53,15 @@
     <UnityVersion>2020.3.25f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\xNode\Examples\MathGraph\Editor\MathGraphEditor.cs" />
-    <Compile Include="Assets\xNode\Examples\LogicToy\Editor\LogicNodeEditor.cs" />
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets\xNode\Examples\MathGraph\Nodes\Editor\DisplayValueEditor.cs" />
     <Compile Include="Assets\xNode\Examples\LogicToy\Editor\LogicGraphEditor.cs" />
-    <Compile Include="Assets\xNode\Examples\StateMachine\Editor\StateGraphEditor.cs" />
+    <Compile Include="Assets\xNode\Examples\LogicToy\Editor\LogicNodeEditor.cs" />
     <Compile Include="Assets\xNode\Examples\StateMachine\Nodes\Editor\StateNodeEditor.cs" />
+    <Compile Include="Assets\xNode\Examples\StateMachine\Editor\StateGraphEditor.cs" />
+    <Compile Include="Assets\xNode\Examples\MathGraph\Editor\MathGraphEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -769,12 +772,20 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{CBDC9498-1D52-14DF-4784-C860F654CF1E}</Project>
+      <Project>{E6E150D2-25F6-3A61-F97B-A43A70BA07BD}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{98007A1E-93B7-EF30-B7CF-D1CE98AF8DD8}</Project>
+      <Project>{EDBE991F-77F5-10FD-F4EB-9F27C1F6B7E1}</Project>
       <Name>Assembly-CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="XNode.csproj">
+      <Project>{DCAE5145-0AA5-E07D-4CC7-9A2486C1D107}</Project>
+      <Name>XNode</Name>
+    </ProjectReference>
+    <ProjectReference Include="XNodeEditor.csproj">
+      <Project>{0726F8C4-7986-7C26-D6CE-1FE2F0601905}</Project>
+      <Name>XNodeEditor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
