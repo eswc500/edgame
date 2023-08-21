@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Name: Dialog Segment
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -344, y: -200}
+  position: {x: -280, y: -200}
   ports:
     keys:
     - input
@@ -146,7 +146,7 @@ MonoBehaviour:
   Images:
   - {fileID: 21300000, guid: 9c0a88d4187408140897b45b4e7e0c99, type: 3}
   Answers:
-  - answerText: sdasdssds
+  - answerText: sdasdssds sda
     activateFeedback: 0
     feedback: 
   NodeColor: {r: 0, g: 0, b: 0, a: 1}
